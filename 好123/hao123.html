@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>hao123</title>
+	<link rel="stylesheet" href="hao123.css">
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<div class="change_skin">
+				<button onclick="changeSkin('skinOrange')">橘色</button>
+				<button onclick="changeSkin('skinBlue')">蓝色</button>
+				<button onclick="changeSkin('skinYellow')">黄色</button>
+				<button onclick="changeSkin('skinGreen')">绿色</button>
+			</div>
+			<div class="title-hao123">
+				<a href="http://www.hao123.com/redian/sheshouyef.htm">
+				<img src="img/hao123.png" alt="hao123" class="hao123-icon">
+			</a>
+			</div>
+			<div class="search">
+				<img src="img/baidu.png" alt="baidu" class="baidu-icon">
+				<div class="search-area">
+					<a href="javascript:;" class="tab-icon">
+						<i class="arrow"></i>
+						<span class="tab-curr">网页</span>
+					</a>
+					<form action="https://www.baidu.com/s" method="get" target="_blank">
+						<input type="text" id="search-input" placeholder="搜你想搜的" name="wd" autofocus="autofocus">
+						<button id="baidu-btn" type="submit">百度一下</button>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+		<div class="guide">
+			<div class="guide-front">
+				<div class="guide-type">
+					<ul class="page_ul">
+						<li class="page_li_first">
+							<a href="https://www.hao123.com/"><span>首页</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=tv_kp&tn=96730486_hao_pg"><span>电视剧</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=movie_kp&tn=96730486_hao_pg"><span>最新电影</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=news_kp&tn=96730486_hao_pg"><span>新闻头条</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=bagua_kp&tn=96730486_hao_pg"><span>八卦娱乐</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=military_kp&tn=96730486_hao_pg"><span>军事热点</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=game_kp&tn=96730486_hao_pg"><span>热门游戏</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=xyx_kp&tn=96730486_hao_pg"><span>小游戏</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=tejia_kp&tn=96730486_hao_pg"><span>今日特价</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=travel_kp&tn=96730486_hao_pg"><span>特价旅游</span></a>
+						</li>
+						<li class="page_li">
+							<a href="https://www.hao123.com/api/ajax?menu=auto_kp&tn=96730486_hao_pg"><span>热点车讯</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="guide-recommend">
+					<span class="title_re">权威推荐</span>
+					<a href="http://www.people.com.cn/">人民网</a>
+					<a href="http://www.xinhuanet.com/">新华网</a>
+					<a href="http://www.cctv.com/">央视网</a>
+					<a href="http://www.cri.cn/">国际在线</a>
+					<a href="http://cn.chinadaily.com.cn/">中国日报</a>
+					<a href="http://www.china.com.cn/">中国网</a>
+					<a href="http://www.ce.cn/">中经网</a>
+					<a href="http://www.gmw.cn/">光明网</a>
+					<a href="http://www.cnr.cn/">央广网</a>
+					<a href="http://www.qstheory.cn/">求是网</a>
+					<a href="http://www.youth.cn/">中青网</a>
+					<a href="http://www.cac.gov.cn/">网信网</a>
+				</div>
+			</div>
+			<div class="guide-left">
+				<div class="left_bar">
+					<i class="left_icon left_icon01"></i>
+					<a href="http://v.hao123.baidu.com/dianying/">电影</a>
+					<s class="split">|</s>
+					<a href="http://live.hao123.com/">直播</a>
+				</div>
+				<div class="left_bar">
+					<i class="left_icon left_icon02"></i>
+					<a href="http://v.hao123.baidu.com/dongman/">动画</a>
+					<s class="split">|</s>
+					<a href="http://www.hao123.com/manhua">漫画</a>
+				</div>
+				<div class="left_bar">
+					<i class="left_icon left_icon03"></i>
+					<a href="http://news.hao123.com/">新闻</a>
+					<s class="split">|</s>
+					<a href="http://tuijian.hao123.com/?type=military">军事</a>
+				</div>
+				<div class="left_bar">
+					<i class="left_icon left_icon04"></i>
+					<a href="http://go.hao123.com/sales?tn=mxlm">旅游</a>
+					<s class="split">|</s>
+					<a href="http://music.hao123.com/">音乐</a>
+				</div>
+				<div class="left_bar">
+					<i class="left_icon left_icon05"></i>
+					<a href="http://caipiao.hao123.com/">彩票</a>
+					<s class="split">|</s>
+					<a href="http://jingcai.hao123.com/">竞猜</a>
+				</div>
+				<div class="left_bar">
+					<i class="left_icon left_icon06"></i>
+					<a href="http://www.hao123.com/gaoxiao">搞笑</a>
+					<s class="split">|</s>
+					<a href="http://hao123.zongheng.com/">小说</a>
+				</div>
+				<div class="left_bar">
+					<i class="left_icon left_icon07"></i>
+					<a href="http://tejia.hao123.com/?tn=mxlm">特价</a>
+					<s class="split">|</s>
+					<a href="http://gouwu.hao123.com/?tn=mxlm1">商城</a>
+				</div>
+				<div class="left_bar">
+					<i class="left_icon left_icon08"></i>
+					<a href="http://www.hao123.com/stocknew">股票</a>
+					<s class="split">|</s>
+					<a href="http://8.hao123.com/">理财</a>
+				</div>
+			</div>
+			<div class="guide_right">
+				<div class="guide_right_up">
+					<ul class="guide_right_ul01">
+						<li class="guide_right_li">
+							<a class="icon_01" href="http://www.baidu.com/?tn=sitehao123_15" >
+								百度
+							</a>
+							•
+							<a href="https://tieba.baidu.com/">贴吧</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_02" href="http://www.sina.com.cn/">
+								新浪
+							</a>•
+							<a href="http://weibo.com/">微博</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_03" href="http://www.sohu.com/">搜狐</a>•
+							<a href="http://tuijian.hao123.com/">热点</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_04" href="http://www.qq.com/">腾讯</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_05" href="http://www.163.com/">网易</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_06" href="https://www.taobao.com/">淘宝网</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_07" href="https://s.click.taobao.com/Z6beuAx">天猫</a>•
+							<a href="https://s.click.taobao.com/GSNeuAx">精选</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_08" href="http://www.ifeng.com/">凤凰网</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_09" href="https://s.click.taobao.com/t?e=m%3D2%26s%3D0uGXTEA1C70cQipKwQzePCperVdZeJviK7Vc7tFgwiFRAdhuF14FMcXnBRBkRZtkJ1gyddu7kN9T6FWfV9YBztUnOPTG9asSgxTfPNxBwAa0XAjOr5Xfko7LAa3DUrM2zt5vEinufIVAFEHVckI7b445SxkPgGIgiBqx4AoGTRxNtT0rMxO3Gl7tq5jQc9hazOVMRxaE72YTjH0qj5aeMXEGPQU8AKbmyz%2BFzve07oqPoEcOiqCwJMYl7w3%2FA2kb">双十一红包</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_10" href="http://game.hao123.com/">免费游戏</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_11" href="http://www.4399.com/">4399小游戏</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_12" href="http://v.hao123.baidu.com/">hao123影视</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_13" href="https://union-click.jd.com/jdc?d=iEZf6v">京东商城</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_14" href="https://www.suning.com/?utm_source=hao123&utm_medium=mingzhan">苏宁易购</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_15" href="http://e.cn.miaozhen.com/r/k=2058249&p=78igw&dx=__IPDX__&rt=2&ns=__IP__&ni=__IESID__&v=__LOC__&xa=__ADPLATFORM__&tr=__REQUESTID__&ro=sm&vo=3487f9a48&vr=2&o=https%3A%2F%2Fwww.xin.com%2F%3Fchannel%3Da90b199c46286d190734e2211253f513">优信二手车</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_16" href="https://www.gome.com.cn/?cmpid=dh_hao123_yx_mz">国美</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_17" href="http://www.autohome.com.cn/">汽车之家</a>
+						</li>
+						<li class="guide_right_li">
+							<a class="icon_18" href="https://s.click.taobao.com/qvi0lew">聚划算</a>
+						</li>
+					</ul>
+				</div>
+				<div class="guide_right_down"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function changeSkin(skin){
+			document.body.className=skin;
+		}
+	</script>
+</body>
+</html>

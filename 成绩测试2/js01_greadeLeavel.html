@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>获取成绩等级</title>
+	<link rel="stylesheet" href="gradeLevel.css">
+	<script type="text/javascript">
+		function gradeResult(){//成绩等级输出函数
+			var score = Number(document.getElementById('grade').value);
+			if (score>100 || score <0 || !score || isNaN(score)) {//判断分数是否在[0,100]之间
+				alert('请输入正确的分数[0,100]')
+			}else{
+				var level = getGradelevel(score);
+				if (level != 'E') {
+					document.getElementById('result').innerText = level;//调用函数，计算等级
+				}
+			}
+		}
+		function getGradelevel(grade){//成绩等级计算函数
+			//switch方法
+			switch(true){
+				case grade>=90 && grade<=100:
+					return 'A';
+				case grade >=80 && grade < 90:
+					return 'B';
+				case grade >=70 && grade <80:
+					return 'C';
+				case grade >=65 && grade <70:
+					return 'D';
+				default:
+					return 'E';
+			}
+			//if方法
+			// if (grade>=90 && grade<=100) {
+			// 	return 'A';
+			// }else if (grade >=80 && grade < 90) {
+			// 	return 'B';
+			// }else if (grade >=70 && grade <80) {
+			// 	return 'C';
+			// }else if (grade >=65 && grade <70) {
+			// 	return 'D';
+			// }else{
+			// 	alert('sorry,你需要重修');
+			// 	return 'E';
+			// }
+		}
+	</script>
+</head>
+<body>
+	<div class="title">
+		<h1>测试你的成绩等级</h1>
+	</div>
+	<div class="search">
+		<input type="text" id="grade" placeholder="请输入你的成绩">
+		<span id="result"></span>
+		<button onclick="gradeResult()">提交</button>
+	</div>
+</body>
+</html>

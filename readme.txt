@@ -1,9 +1,3 @@
-你好GIT
-Git is a version control system.
-Git is free software.
-Git is a distributed version control system
-Git is free software distributed under the GPL
-Git has a mutable index called stage.
-Git tracks changes of files.
-Creating a new branch is quick
-Creating a new branch is quick & simple.
+﻿嗨！你好，
+这个git库当中保存都是我在前端学习过程中从入门到逐渐熟的作业，
+希望大家能互相交流，互相提升。

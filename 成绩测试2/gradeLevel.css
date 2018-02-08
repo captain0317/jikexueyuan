@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: linear-gradient(to right, rgba(255,0,0,1),rgba(255,0,0,0));
+	text-align: center;
+}
+.title{
+	font-family: cursive;
+}
+h1{
+	animation: bounceIndown 1s .2s ease both;
+}
+
+#result{
+	border: 1px solid white;
+	display: inline-block;
+	width: 100px;
+	height: 36px;
+	line-height: 40px;
+	vertical-align: middle;
+	margin-right:-5px; 
+}
+.search{
+	width: 500px;
+	height: 40px;
+	margin: 100px auto;
+}
+#grade{
+	width: 200px;
+	height: 36px;
+	text-indent: 10px;
+	margin-right: -5px;
+}
+button{
+	width: 80px;
+	height: 40px;
+}
+@keyframes bounceIndown{
+	0%{
+		opacity: 0;
+		transform:translateY(-2000px);
+	}
+	60%{
+		opacity: 1;
+		transform:translateY(30px);
+	}
+	80%{
+		transform:translateY(10px);
+	}
+	100%{
+		transform:translateY(0px);
+	}
+}

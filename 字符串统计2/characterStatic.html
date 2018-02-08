@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="characterStatic.css">
+</head>
+<body>
+	<form action="">
+		<table border='1' style="border-collapse: collapse;text-align: center;">
+			<thead>
+				<tr>
+					<th colspan="3" height="30px">
+						<input type="text" id="strInput" placeholder="请输入一个字符串">
+						<button onclick="main()">提交</button>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>max-value</td>
+					<td>count</td>
+					<td>index</td>
+				</tr>
+				<tr>
+					<td id="outValue"></td>
+					<td id="outCount"></td>
+					<td id="outIndex"></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+	<script type="text/javascript">
+		//我想获取输入框中的字符串，并且做统计，但总是没有输出结果，参数调用可能有问题
+		//var str = document.getElementById('strInput').value;//获取输入值
+		//var Arry = new Array();//定义数组，作为要统计的变量
+		//Arry = str;//赋值给数组
+		//var Arry=['a','x','b','d','m','a','k','m','p','j','a'];
+		//var member = new Array();
+		function character(valu,count,idx){//定义对象，接受每个字母的属性
+			this._valu = valu;//值
+			this._count = count;//个数
+			this._index = idx;//索引
+		}
+		function search(Arry){
+			var member = new Array();
+			var length=Arry.length;
+		    for(i=0;i<length;i++){
+		    	var k=0;//定变量义数组元素个数
+		    	var j=0;//索引变量
+		    	var index='';//变量没有被初始化时为 undefined ，使用前需注意。
+		    	while(j<length){
+		    		if (Arry[i]==Arry[j] && i<=j) {
+		    			k+=1;
+		    			index+=j+' ';
+		    			j++;
+		    		}
+		    		else if (Arry[i]==Arry[j] && i>j) {
+		    			j=i+1;//当i>j时且Arry[i]==Arry[j]，可减少循环次数
+		    		}
+		    		else{
+		    			j++;
+		    		}
+		    	}//while循环结束
+		    	member[i]= new character(Arry[i],k,index);
+		    }//for循环结束
+		    return member;
+		}
+		function main(){//主函数
+			var str = document.getElementById('strInput').value;
+			//console.log(str);
+			var Arry = new Array();
+			Arry = str;
+			//alert(str);
+			alert(Arry);
+			//console.log(Arry);
+			var max = new Object();//定义临时对象
+			max.value='';
+			max.count=0;
+			max.index=0;
+			var member = search(Arry);
+			//alert(member[1]._count);
+			for(i in member){
+				if (max.count<=member[i]._count) {//找出最大结果
+					max.value = member[i]._valu;
+					max.count = member[i]._count;
+					max.index = member[i]._index;
+				}
+			}
+			console.log('value:'+max.value+' '+'count:'+max.count+' '+'index:'+max.index);
+			//在控制台输出结果
+			document.getElementById('outValue').innerText = max.value;
+			document.getElementById('outCount').innerText = max.count;
+			document.getElementById('outIndex').innerText = max.index;
+		}
+		//main();//调用函数在表格输出结果
+	</script>
+</body>
+</html>

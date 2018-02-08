@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>div+css布局</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+	*{
+		margin:0;
+		padding: 0;
+	}
+	div{}
+	.header{
+		background-color: orange;
+		height: 50px;
+		border-bottom: 3px solid #fff;
+	}/*父容器*/
+	.article{
+		background-color: yellow;
+		/*height: 300px;*/
+		overflow: hidden;
+	}
+	.footer{
+		background-color: blue;
+		height: 30px;
+		border-top: 3px solid #fff;
+	}
+	.article .right{
+		float:left;
+		width: 200px;
+		margin-bottom: -9999px;
+		padding-bottom: 9999px;
+		margin-left: -200px;
+
+	}
+	.article .left{
+		float: left;
+		width: 150px;
+		height: 16px;
+		margin-bottom: -9999px;
+		padding-bottom: 9999px;
+		margin-left: -100%;/*负边距*/
+	}
+	.middle{
+		background-color: lightsteelblue;
+		float: left;
+		width: 100%;
+		margin-bottom: -9999px;
+		padding-bottom: 9999px;
+	}
+	.inner{
+		margin-left: 150px;
+		margin-right: 200px;
+		background: lightsteelblue;
+	}
+	.navstyle{
+		float: right;
+		margin-right: 20px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="header">
+		<img src="http://n.sinaimg.cn/sports/index1508/logo.png" width="120px" height="30px" alt="">
+		<nav class="navstyle">
+			<a href="http://www.sina.com.cn/">新浪首页</a>
+			<a href="http://sports.sina.com.cn/">新闻</a>
+			<a href="http://sports.sina.com.cn/">体育</a>
+			<a href="http://finance.sina.com.cn/">财经</a>
+		</nav>
+	</div>
+	<div class="article">
+		<div class="middle">
+	    	<div class="inner">
+		    	<ul>
+					<li>
+						<a href="http://sports.sina.com.cn/china/j/2017-09-02/doc-ifykqmrv7571925.shtml">苏宁训练基地球迷开放日 杨笑天:进球或在下一场</a>
+					</li>
+					<li><a href="http://sports.sina.com.cn/china/j/2017-09-02/doc-ifykqmrv7510868.shtml">热身赛-西塞双响塔尔德利破门 鲁能3-0击败中能</a></li>
+					<li>
+					<a href="http://sports.sina.com.cn/china/j/2017-09-02/doc-ifykqmrv7480585.shtml">中超外援战世预赛:维特塞尔破门染红 米克尔传射</a></li>
+					<li>
+					<a href="http://sports.sina.com.cn/china/national/2017-09-02/doc-ifykpysa2708925.shtml">国足发布决战卡塔尔海报:拼出未来 想赢只有靠拼</a></li>
+					<li>
+					<a href="http://sports.sina.com.cn/china/j/2017-09-02/doc-ifykpysa2698777.shtml">
+					刘健:永远最关注下一场 不管主力替补都不掉链子</a></li>
+				</ul>
+	    	</div>
+		</div>
+		<div class="left">
+		<img src="http://n.sinaimg.cn/sports/20170902/hotM-fykpysa2667512.jpg" width="150px" alt="德国">
+		</div>
+		<div class="right">
+			<img src="http://n.sinaimg.cn/sports/transform/20170901/P2IV-fykqmrv6761082.jpg"  width="200px" alt="国足">
+		</div>
+	</div>
+	<div class="footer">
+	我是尾巴,版权所有@
+	</div>
+</body>
+</html>

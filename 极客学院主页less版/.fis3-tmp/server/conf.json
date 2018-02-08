@@ -1,0 +1,9 @@
+{
+  "type": "node",
+  "root": "C:/Users/Shaohua/AppData/Local/.fis3-tmp/www",
+  "port": 8080,
+  "timeout": 30,
+  "browse": true,
+  "daemon": true,
+  "https": false
+}

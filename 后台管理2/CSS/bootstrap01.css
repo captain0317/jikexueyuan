@@ -1,0 +1,73 @@
+body{
+    background: url("../img/background01.jpg")0 0 no-repeat;
+    background-size: cover;
+}
+/*登录框*/
+.signin{
+    width:350px;
+    height: auto;
+    margin: 0 auto;
+    /*position: relative;*/
+    /*top:50%;*/
+    /*left: 50%;*/
+    /*margin-left: -175px;*/
+    /*margin-right: -175px;*/
+    border-radius: 5px;
+    /*margin-top: 50px;*/
+}
+/*登录框头像*/
+.signin-head{
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+}
+/*登录框头像图片*/
+.signin-head img{
+    width: 100px;
+    height:100px;
+}
+/*登录框用户名、密码、提交*/
+.form-signin{
+    max-width: 310px;
+    padding: 10px 15px 15px 15px;
+    margin: 0 auto;
+}
+.form-signin .checkbox{
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.form-signin .form-control{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus{
+    z-index: 2;
+}
+/*用户名*/
+.form-signin input[type="text"]{
+    margin-bottom: 14px;
+    background:url("../img/user.gif")0 0 transparent no-repeat;
+    background-size: 40px;
+    padding-left: 50px;
+    color: #3c763d;
+    font-family: "Verdana";
+}
+/*密码*/
+.form-signin input[type="password"]{
+    margin-bottom: 10px;
+    background:url("../img/lock.gif")0 0 transparent no-repeat;
+    background-size: 40px;
+    padding-left: 50px;
+    color: #3c763d;
+}
+footer{
+    text-align: center;
+    margin-top: 150px;
+}
